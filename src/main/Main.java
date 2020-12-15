@@ -15,6 +15,7 @@ public class Main {
                 Record r = new Record();
                 RecordDao.createRecord(r);
                 break;
+                //comment
             case "a":
                 Record a = new Record(111, "ukr.net", "alex2", "alex2","", "14.12.2020");
                 RecordDao.add(a);

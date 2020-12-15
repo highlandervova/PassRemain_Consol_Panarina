@@ -13,14 +13,14 @@ public class RecordDao {
     private static final String ADD             = "INSERT INTO record (id , address, login , pass ,data, comment ) VALUES( ( SELECT COALESCE(MAX(id)+1,1) from record ), ?,?,?,?,?)";
     private static final String SELECTALL       = "SELECT id , address , login , pass ,comment , data FROM RECORD";
     private static final String CREATE          = "CREATE TABLE IF NOT EXISTS record (id INT PRIMARY KEY, address VARCHAR(50), login VARCHAR(50), pass VARCHAR(50),comment VARCHAR(50),data VARCHAR(50))";
-
+// comment
     static {
         try {
             Class.forName(DRIVER) ;
         }catch (Exception ex) {
             ex.printStackTrace();
         }
-  //comment
+
     }
 
     public static void add (Record r){
